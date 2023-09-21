@@ -32,8 +32,7 @@ export default defineConfig({
       '@components': resolve(__dirname, 'src', 'components'),
     }
   },
-  publicDir: '../public',
-  assetsInclude: ['**/*.png'],
+  base: './',
   build: {
       outDir: '../dist',
       emptyOutDir: true,
@@ -41,6 +40,7 @@ export default defineConfig({
         external: [/^\/i\//, /^\/FUMBBL\//],
         input: {
             tournamentsquads: resolve(__dirname, 'htdocs', 'tournamentsquads.html'),
+            winrater: resolve(__dirname, 'htdocs', 'index.html')
         },
         output: {
           format: 'esm',

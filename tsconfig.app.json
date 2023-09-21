@@ -11,5 +11,6 @@
       "@style/*": ["src/style/*"],
       "@components/*": ["src/components/*"]
     }
-  }
+  },
+  "verbatimModuleSyntax": false
 }

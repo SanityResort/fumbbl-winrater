@@ -13,5 +13,6 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "types": ["node", "vite/client"]
-  }
+  },
+  "verbatimModuleSyntax": false
 }
