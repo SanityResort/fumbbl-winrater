@@ -4,7 +4,7 @@
       <div class="title-text">WinRater</div>
     </div>
     <div class="top-bar pull-down">
-      <img id="pull-down-icon" src="../icons/pulldown.png" alt="Pull down arrow" />
+      <img id="pull-down-icon" src="../../icons/pulldown.png" alt="Pull down arrow" />
     </div>
     <div class="description">
       <div class="description-section">

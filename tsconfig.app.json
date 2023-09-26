@@ -10,7 +10,8 @@
       "@/*": ["./src/*"],
       "@style/*": ["src/style/*"],
       "@components/*": ["src/components/*"]
-    }
-  },
-  "verbatimModuleSyntax": false
+    },
+    "verbatimModuleSyntax": false
+  }
+  
 }
