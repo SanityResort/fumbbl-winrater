@@ -4,7 +4,7 @@ import { Line } from '@observablehq/plot'
 import { onMounted, onUnmounted } from 'vue'
 import { useMatchStore } from '../pinia/store'
 import { storeToRefs } from 'pinia'
-import PlotFigure from './PlotFigure.vue'
+import PlotGraph from './Plot.vue'
 
 const matchStore = useMatchStore()
 
@@ -42,14 +42,12 @@ const resizeCallback = () => {
 </script>
 
 <style scoped>
-#plot {
-  margin-bottom: 0.5em;
-}
+@import './graph.less';
 </style>
 
 <template>
   <div id="plot">
-    <PlotFigure
+    <PlotGraph
       v-if="stores.size > 0 && modificationCounter > 0"
       :key="modificationCounter"
       :options="{

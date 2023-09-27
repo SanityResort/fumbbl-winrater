@@ -33,12 +33,5 @@ function passedCallback() {
 </script>
 
 <style scoped>
-.iconButton {
-  border: none;
-  background: none;
-}
-
-.iconButton > img {
-  height: 2em;
-}
+@import './iconButton.less';
 </style>

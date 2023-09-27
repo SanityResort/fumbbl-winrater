@@ -37,31 +37,7 @@ async function loadData() {
 </script>
 
 <style scoped>
-.error {
-  color: red;
-  font-weight: bold;
-  height: 0;
-  text-align: center;
-  transition: height 0.2s ease;
-}
-
-.error.active {
-  display: block;
-  height: var(--line-height);
-}
-
-.addButton {
-  padding-left: 0.25em;
-}
-
-#coachForm {
-  display: flex;
-  justify-content: center;
-}
-
-.search {
-  padding-top: 0.75em;
-}
+@import './coachLocator.less';
 </style>
 
 <template>

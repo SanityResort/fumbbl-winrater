@@ -39,52 +39,7 @@ function addConfig() {
 </script>
 
 <style scoped>
-.coachData,
-.config {
-  background: var(--color-element-background);
-  border: 1px solid black;
-  border-radius: var(--border-radius-element);
-  margin: 0.25em;
-  max-width: 23em;
-}
-
-.coachName {
-  padding: 0.25em 2.5em;
-}
-
-.labels {
-  display: flex;
-  flex-flow: row wrap;
-  font-size: 0.75em;
-  margin: 0.2em;
-}
-
-.rating {
-  background: var(--color-sub-section-background);
-  border: 2px black solid;
-  border-radius: 2em;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-.removeStore {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.store {
-  background: var(--color-title-background);
-  border-start-end-radius: var(--border-radius-element);
-  border-start-start-radius: var(--border-radius-element);
-  color: var(--color-text-header);
-  flex-flow: row;
-  position: relative;
-  text-align: center;
-  user-select: none;
-}
+@import './rating.less'
 </style>
 
 <template>

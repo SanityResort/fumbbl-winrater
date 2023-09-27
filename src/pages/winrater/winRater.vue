@@ -8,7 +8,7 @@ import CollapsableHeader from '../../components/collapsableheader/CollapsableHea
 import ConfigEditor from '../../components/editor/ConfigEditor.vue'
 
 const matchStore = useMatchStore()
-const { modificationCounter, stores, editedConfig } = storeToRefs(matchStore)
+const { stores, editedConfig } = storeToRefs(matchStore)
 </script>
 
 <template>
@@ -17,12 +17,7 @@ const { modificationCounter, stores, editedConfig } = storeToRefs(matchStore)
     <CoachLookup class="lookup" />
   </header>
 
-  <main
-    :class="{
-      'fill-height': modificationCounter === 0 || stores.size === 0,
-      'fit-content': modificationCounter !== 0 && stores.size !== 0
-    }"
-  >
+  <main>
     <div class="separator" />
     <ConfigEditor v-if="editedConfig" />
     <div class="ratings">
@@ -33,36 +28,5 @@ const { modificationCounter, stores, editedConfig } = storeToRefs(matchStore)
 </template>
 
 <style scoped>
-header {
-  background: var(--color-section-background);
-  display: flex;
-  flex-flow: column;
-  margin: 0 auto;
-  place-items: flex-start;
-  width: 100%;
-}
-
-.lookup {
-  margin: 0 auto;
-}
-
-main {
-  background: var(--color-section-background);
-  display: flex;
-  flex-flow: column;
-  padding: 0 0.5em;
-}
-
-.fill-height {
-  height: 100%;
-}
-
-.fit-content {
-  height: fit-content;
-}
-
-.ratings {
-  display: flex;
-  flex-flow: row wrap;
-}
+@import './winrater.less';
 </style>

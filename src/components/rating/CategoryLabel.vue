@@ -47,15 +47,9 @@ function passedCallback() {
 </script>
 
 <style scoped>
+@import './categoryLabel.less';
 .category {
-  background: v-bind(background);
-  border-color: lightgray;
-  border-radius: var(--line-height);
-  border-style: ridge;
-  color: v-bind(foreground);
-  font-weight: bold;
-  margin: 1px 1px 1px 0;
-  padding: 0 calc(var(--line-height) / 2);
-  user-select: none;
-}
+    background: v-bind(background);
+    color: v-bind(foreground);
+  }
 </style>

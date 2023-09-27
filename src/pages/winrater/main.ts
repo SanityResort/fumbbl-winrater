@@ -1,13 +1,13 @@
-import '../../assets/main.css'
+import '../../style/main.less'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { LoadingPlugin } from 'vue-loading-overlay'
 import 'vue-loading-overlay/dist/css/index.css'
 // @ts-ignore
-import App from './App.vue'
+import winrater from './winrater.vue'
 
-const app = createApp(App)
+const app = createApp(winrater)
 const pinia = createPinia()
 
 app.use(pinia)
