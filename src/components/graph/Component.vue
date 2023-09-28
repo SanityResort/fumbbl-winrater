@@ -4,7 +4,7 @@ import { Line } from '@observablehq/plot'
 import { onMounted, onUnmounted } from 'vue'
 import { useMatchStore } from '../pinia/store'
 import { storeToRefs } from 'pinia'
-import PlotGraph from './Plot.vue'
+import PlotGraph from './PlotGraph.vue'
 
 const matchStore = useMatchStore()
 
