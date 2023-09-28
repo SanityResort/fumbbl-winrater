@@ -4,7 +4,7 @@ import Rating from '../../components/rating/Component.vue'
 import Graph from '../../components/graph/Component.vue'
 import { useMatchStore } from '../../components/pinia/store'
 import { storeToRefs } from 'pinia'
-import CollapsableHeader from '../../components/collapsableheader/CollapsableHeader.vue'
+import DescriptionHeader from '../../components/descriptionheader/DescriptionHeader.vue'
 import ConfigEditor from '../../components/editor/ConfigEditor.vue'
 
 const matchStore = useMatchStore()
@@ -13,7 +13,7 @@ const { stores, editedConfig } = storeToRefs(matchStore)
 
 <template>
   <header>
-    <CollapsableHeader />
+    <DescriptionHeader />
     <CoachLookup class="lookup" />
   </header>
 
