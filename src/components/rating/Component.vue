@@ -1,21 +1,21 @@
 <script lang="ts" setup>
-import { Store } from './store'
-import { useMatchStore } from '../pinia/store'
-import { storeToRefs } from 'pinia'
+import {Store} from './store'
+import {useMatchStore} from '../pinia/store'
+import {storeToRefs} from 'pinia'
 import CategoryLabel from './CategoryLabel.vue'
 import GraphConfig from './GraphConfig.vue'
 import IconButton from '../iconButton/IconButton.vue'
-import { reactive } from 'vue'
+import {reactive} from 'vue'
 import addIcon from '../../icons/addIcon.png'
 import removeIcon from '../../icons/removeIcon.png'
 
 const props = defineProps({
-  store: Store
+    store: Store
 })
 
 const matchStore = useMatchStore()
-const { stores } = storeToRefs(matchStore)
-let { modificationCounter } = storeToRefs(matchStore)
+const {stores} = storeToRefs(matchStore)
+let {modificationCounter} = storeToRefs(matchStore)
 
 const store: Store = props.store as Store
 const key = store.coachName
@@ -25,21 +25,21 @@ const configs = store.configs
 const storeRef = reactive(store)
 
 function removeStore() {
-  stores.value.delete(key)
-  if (stores.value.size == 0) {
-    modificationCounter.value = 0
-  } else {
-    modificationCounter.value += 1
-  }
+    stores.value.delete(key)
+    if (stores.value.size == 0) {
+        modificationCounter.value = 0
+    } else {
+        modificationCounter.value += 1
+    }
 }
 
 function addConfig() {
-  store.addConfig()
+    store.addConfig()
 }
 </script>
 
 <style scoped>
-@import './rating.less'
+@import './rating.less';
 </style>
 
 <template>
@@ -74,12 +74,12 @@ function addConfig() {
       :show-remove-button="configs.length > 1"
     />
 
-    <IconButton
-      v-if="storeRef.ready"
-      alt="Add config"
-      :callback="addConfig"
-      :src="addIcon"
-      :show-indicator="true"
-    />
-  </div>
+        <IconButton
+                v-if="storeRef.ready"
+                :callback="addConfig"
+                :show-indicator="true"
+                :src="addIcon"
+                alt="Add config"
+        />
+    </div>
 </template>

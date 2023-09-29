@@ -1,11 +1,60 @@
 @import '@style/colors';
 
-.content-layer-2 {
-    background: @White;
-    border: 1px solid @Quicksilver;
-    border-radius: 5px;
-}
+@LineHeightRankingTitle: 25px;
 
 .bolder {
     font-weight: 700;
 }
+
+.box-header {
+    .rounded-border-top();
+    font-size: 15px;
+    line-height: @LineHeightRankingTitle;
+    position: relative;
+    text-align: center;
+    user-select: none;
+}
+
+.button-pos-base {
+    position: absolute;
+    top: 2px;
+}
+
+.ranking-button-pos-right {
+    .button-pos-base();
+    right: 0;
+}
+
+.ranking-button-pos-left {
+    .button-pos-base();
+    left: 0;
+}
+
+
+.content-layer-1 {
+    .rounded-border();
+    background: @OldLace;
+    border: 1px solid @Quicksilver;
+}
+
+.content-layer-2 {
+    .rounded-border();
+    background: @White;
+    border: 1px solid @Quicksilver;
+}
+
+.rounded-border {
+    .rounded-border-top();
+    .rounded-border-bottom();
+}
+
+.rounded-border-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.rounded-border-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+

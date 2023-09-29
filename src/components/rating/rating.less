@@ -1,8 +1,9 @@
+@import '@style/mixins';
+
 .coachData,
 .config {
-  background: var(--color-element-background);
-  border: 1px solid black;
-  border-radius: var(--border-radius-element);
+  .content-layer-2();
+  color: white;
   margin: 0.25em;
   max-width: 23em;
 }
@@ -19,9 +20,7 @@
 }
 
 .rating {
-  background: var(--color-sub-section-background);
-  border: 2px black solid;
-  border-radius: 2em;
+  .content-layer-1();
   display: flex;
   flex-flow: row wrap;
   margin: 0.5em;
@@ -29,18 +28,10 @@
 }
 
 .removeStore {
-  position: absolute;
-  top: 0;
-  right: 0;
+  .ranking-button-pos-right();
 }
 
 .store {
-  background: var(--color-title-background);
-  border-start-end-radius: var(--border-radius-element);
-  border-start-start-radius: var(--border-radius-element);
-  color: var(--color-text-header);
-  flex-flow: row;
-  position: relative;
-  text-align: center;
-  user-select: none;
+  .box-header();
+  background: @CarmineGradient;
 }
