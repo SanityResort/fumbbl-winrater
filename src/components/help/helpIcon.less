@@ -1,28 +1,31 @@
+@import '@style/mixins';
+
 .help {
-    color: var(--color-text-header);
-    background: var(--color-help-background);
+    @Factor: 0.6;
+    color: @White;
+    background: @CarmineRadialGradient;
     border: 1px solid black;
     border-radius: 100%;
     font-weight: bolder;
-    font-size: 0.75em;
-    height: var(--line-height);
-    line-height: var(--line-height);
+    font-size: calc(@FontSize * @Factor);
+    height: calc(@LineHeight * @Factor);
+    line-height: calc(@LineHeight * @Factor);
     text-align: center;
     user-select: none;
-    width: var(--line-height);
+    width: calc(@LineHeight * @Factor);
   }
   
   .help-container {
     vertical-align: center;
-    height: var(--line-height);
+    height: @LineHeight;
   }
   
   .tooltip-content {
-    background-color: var(--color-element-background);
-    border: var(--color-text) 1px solid;
+    background-color: @OldLace;
+    border: @Black 1px solid;
     border-radius: 0.5em;
-    color: var(--color-text);
+    color: @Black;
     font-size: 0.9em;
-    line-height: calc(var(--line-height) * 0.9);
+    line-height: calc(@LineHeight * 0.9);
     padding: 0.25em;
   }
