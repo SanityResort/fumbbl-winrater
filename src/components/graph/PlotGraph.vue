@@ -69,7 +69,7 @@ const render = () => {
 
           const plotDom = d3.select(plot)
           plotDom
-            .attr('style', 'background:var(--color-element-background)')
+            .attr('style', 'background:#f8f5e7; border-radius: 5px; border: 1px solid #999')
             .attr('font-size', '1em')
           const dot = plotDom.append('g').attr('display', 'none')
           dot.append('circle').attr('r', '0.3em').attr('stroke-width', '0.15em').attr('id', 'dot')
