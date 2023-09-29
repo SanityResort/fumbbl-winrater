@@ -55,12 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import { useMatchStore } from '../pinia/store'
-import { storeToRefs } from 'pinia'
-import {PageHeader, TitledPanel} from '@components/fumbblcomponents'
-
-const matchStore = useMatchStore()
-const { stores } = storeToRefs(matchStore)
+import {PageHeader} from '@components/fumbblcomponents'
 
 </script>
 
