@@ -27,7 +27,7 @@
                     <div class="description-section">
                         <p>
                             You can reduce the size of the data set by either count (i.e. first 100
-                            games, games 75 - 157 etc.), being a range of match ids or certain
+                            games, games 75 - 157 etc.), a range of match ids or certain
                             dates. This filter is applied after the division filter.
                         </p>
                         <p>In addition you can choose between two aggregation modes:</p>
