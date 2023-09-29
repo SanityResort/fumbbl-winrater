@@ -1,20 +1,18 @@
+@import '@style/mixins';
+
 #aggregation,
 #ranges {
   width: fit-content;
 }
 
 .editingPane {
-  background: var(--color-element-background);
-  border: 2px black solid;
-  border-radius: 2em;
+  .content-layer-1();
   margin: 0.5em auto;
   width: fit-content;
 }
 
 .element {
-  background: var(--color-sub-section-background);
-  border: 1px solid black;
-  border-radius: var(--border-radius-element);
+  .content-layer-2();
   margin: 0.25em;
   padding: 0.25em;
 }
@@ -56,8 +54,8 @@
 }
 
 #title-bar {
-  border-start-end-radius: 2em;
-  border-start-start-radius: 2em;
+  .box-header();
   display: flex;
   justify-content: center;
+  padding: 0.25em;
 }
