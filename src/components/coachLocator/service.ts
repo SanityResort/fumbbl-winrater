@@ -1,5 +1,5 @@
 import type { Ref } from 'vue'
-import type { Store } from '@/rating/store'
+import type { Store } from '../rating/store'
 
 const BASE_URL = 'https://fumbbl.com/api/'
 
