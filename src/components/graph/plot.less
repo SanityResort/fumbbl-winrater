@@ -1,15 +1,15 @@
+@import '@style/mixins';
+
 #content {
-    background: white;
-    border-end-start-radius: var(--border-radius-element);
-    border-end-end-radius: var(--border-radius-element);
+  .rounded-border-bottom();
+    background: @White;
     font-weight: bold;
     width: 100%;
     margin: auto;
   }
   
   #content :last-child {
-    border-end-start-radius: var(--border-radius-element);
-    border-end-end-radius: var(--border-radius-element);
+    .rounded-border-bottom();
   }
   
   .content-item,
@@ -27,11 +27,11 @@
   .explanation {
     font-size: 0.7em;
     font-weight: normal;
-    line-height: calc(var(--line-height) * 0.75);
+    line-height: calc(@LineHeight * 0.75);
   }
   
   .even {
-    background: var(--color-element-background);
+    background: @OldLace;
   }
   
   .item-part {
@@ -39,7 +39,7 @@
   }
   
   .odd {
-    background: var(--color-section-background);
+    background: @Eggshell;
   }
   
   #time {
@@ -57,8 +57,7 @@
   }
   
   #title {
-    border-start-start-radius: var(--border-radius-element);
-    border-start-end-radius: var(--border-radius-element);
+    .rounded-border-top();
     padding: 0.2em 1.5em;
     text-align: center;
   }
@@ -68,7 +67,5 @@
   }
   
   #tooltip-content {
-    background: white;
-    border: 1px black solid;
-    border-radius: var(--border-radius-element);
+    .content-layer-2();
   }
